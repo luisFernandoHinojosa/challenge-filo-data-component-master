@@ -26,7 +26,7 @@ html{
 
 body{
     font-family: var(--body-font);
-    background-image: url(/challenge/assets/img/bg-mobile.png);
+    background: url(/challenge/assets/img/bg-mobile.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: contain;
@@ -179,7 +179,7 @@ img, svg{
         width: auto;
     }
     body{
-        background-image: url(/challenge/assets/img/bg-desktop.png);
+        background: url(/challenge/assets/img/bg-desktop.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
