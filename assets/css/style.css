@@ -1,0 +1,219 @@
+:root{
+    /*Colors primary*/
+    --Gradient: hsl(6, 100%, 80%);
+    --Gradient2:hsl(335, 100%, 65%);
+
+    /*Neutral*/
+--Pale-Blue: hsl(243, 100%, 93%);
+--Grayish-Blue: hsl(229, 7%, 55%);
+--Dark-Blue: hsl(228, 56%, 26%);
+--Very-Dark-Blue: hsl(229, 57%, 11%);
+
+    /*Typography*/
+    --body-font: 'Raleway',sans-serif;
+
+    /*Weights*/
+    --font-lg:400;
+    --font-xl:700;
+}
+
+html{
+    font-size: 16px;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--body-font);
+    background-image: url(/challenge/assets/img/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: center center;
+    display: grid;
+    place-content: center;
+}
+
+html, body{
+    height: 100%;
+}
+
+img, svg{
+    max-width: 100%;
+    height: auto;
+}
+
+.p{
+    font-size: 14px;
+    color: var(--Pale-Blue);
+    font-weight: var(--font-lg);
+}
+
+.app-web{  
+    width:auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.icons{
+    width: auto;
+    background-color: var(--Dark-Blue);
+    padding: 45px;
+    display: grid;
+    row-gap: 40px;
+    border-radius: 15px 90px 15px 15px;
+    
+
+}
+
+.img-logo{
+    width: 135px;
+}
+
+.folders{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.document, .folder, .upload{
+    background-color: var(--Very-Dark-Blue);
+    padding: 10px;
+    display: grid;
+    place-content: center;
+    border-radius: 7px;
+
+}
+
+.percentage{
+    width: auto;
+    height: 110px;
+    background-color: var(--Dark-Blue);
+    border-radius: 15px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.percentage-info{
+    font-weight: var(--font-lg);    
+}
+
+.container-barra{
+    width: 297px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.barra-bg{
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.barra-percentage{
+    background-color: var(--Gradient);
+    background: linear-gradient(to right, var(--Gradient), var(--Gradient2));
+    width: 80%;
+    border-radius: 12px;
+    display: flex;
+    align-items:center;
+    justify-content: end;
+}
+
+.circle{
+    background-color: white;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+}
+
+.dato-percentage{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-available{
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.percentage-available{
+
+    background-color: white;
+    display: grid;
+    place-content: center;
+    padding: 10px;
+    width: 150px;
+    height: 59px;
+    border-radius: 13px;
+    position:relative;
+    bottom: 11%;
+    right: 4%;  
+}
+
+.p-number{
+    font-size: 33px;
+}
+
+.p-color{
+    color: var(--Grayish-Blue);
+    font-weight: var(--font-xl);
+}
+
+@media(min-width:768px){
+    .app-web{
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        width: auto;
+    }
+    body{
+        background-image: url(/challenge/assets/img/bg-desktop.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+        display: grid;
+        place-content: center;
+    }
+
+    .icons{
+        width: 250px;
+    }
+    
+    .percentage{
+        width: 400px;
+        display: flex;
+        align-items:start;
+    }
+
+    .barra-bg{
+        width: 400px;
+    }
+
+    .dato-percentage{
+        width: 402px;
+    }
+
+    .percentage-available{
+        top: -185%;
+        right: -63%;  
+    }
+}
+
+
+
+
+
+
